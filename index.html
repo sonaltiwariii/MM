@@ -1,0 +1,28 @@
+<html>
+<head> 
+      <title> App 1 by Sonal </title>
+      <style> 
+             * { font-size:40px; }
+      </style>
+      <script>
+              function show()
+              {
+               event.preventDefault();
+               let ans = document.getElementById("ans");
+               let mm = ["live and let live", "just do it", "change is necessary", "you are amazing"];
+               let r = parseInt(Math.random() * mm.length);
+               ans.innerHTML = mm[r];
+               }
+       </script>
+</head>
+
+<body>
+<center>
+        <h1> Motivational Msg V1 </h1>
+        <form onsubmit="show()">
+        <input type="submit" value="Get Msg"/>
+        </form>
+        <h1 id="ans" />
+</center>
+</body>
+</html>
